@@ -1,0 +1,22 @@
+{
+  "platform": "cognodb",
+  "startedAt": "2026-08-20T09:28:24.158930600Z",
+  "nodeCount": 7115,
+  "relationshipCount": 103689,
+  "iterations": 50,
+  "warmup": 10,
+  "concurrency": 4,
+  "durationSeconds": 30,
+  "writeRatio": 0.100,
+  "loadStats": {"nodes":7115,"relationships":103689,"seconds":234.859,"nodesPerSecond":30.295,"relationshipsPerSecond":441.494},
+  "metrics": {
+    "point_lookup": {"samples":50,"minMs":758.223,"p50Ms":773.785,"p95Ms":964.322,"maxMs":1629.983},
+    "indexed_lookup": {"samples":50,"minMs":758.547,"p50Ms":763.257,"p95Ms":1017.193,"maxMs":1532.880},
+    "traversal_1_hop": {"samples":50,"minMs":758.149,"p50Ms":772.810,"p95Ms":1081.796,"maxMs":1227.948},
+    "traversal_2_hop": {"samples":50,"minMs":757.818,"p50Ms":770.050,"p95Ms":1024.320,"maxMs":1180.693},
+    "traversal_3_hop": {"samples":50,"minMs":760.026,"p50Ms":791.432,"p95Ms":1232.692,"maxMs":1848.035},
+    "aggregation": {"samples":50,"minMs":771.218,"p50Ms":780.472,"p95Ms":919.002,"maxMs":965.240}
+  },
+  "mixedWorkload": {"operations":94,"reads":90,"writes":4,"queriesPerSecond":3.133},
+  "resourceStats": {"advertisedSpec":"CognoDB c0 free tier: burstable 0.5 vCPU, 256 MB RAM, 1 GB disk","observedUsage":"not observable through the portable Bolt harness"}
+}

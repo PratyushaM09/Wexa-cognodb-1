@@ -1,0 +1,7 @@
+platform,metric,samples,min_ms,p50_ms,p95_ms,max_ms
+cognodb,point_lookup,50,758.223,773.785,964.322,1629.983
+cognodb,indexed_lookup,50,758.547,763.257,1017.193,1532.880
+cognodb,traversal_1_hop,50,758.149,772.810,1081.796,1227.948
+cognodb,traversal_2_hop,50,757.818,770.050,1024.320,1180.693
+cognodb,traversal_3_hop,50,760.026,791.432,1232.692,1848.035
+cognodb,aggregation,50,771.218,780.472,919.002,965.240

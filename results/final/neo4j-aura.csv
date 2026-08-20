@@ -1,0 +1,7 @@
+platform,metric,samples,min_ms,p50_ms,p95_ms,max_ms
+neo4j-aura,point_lookup,50,260.431,274.563,549.242,610.975
+neo4j-aura,indexed_lookup,50,262.266,273.944,444.394,648.344
+neo4j-aura,traversal_1_hop,50,261.320,273.243,579.798,672.671
+neo4j-aura,traversal_2_hop,50,262.871,276.633,460.438,704.941
+neo4j-aura,traversal_3_hop,50,262.673,267.222,333.862,569.385
+neo4j-aura,aggregation,50,264.263,268.563,367.228,503.799

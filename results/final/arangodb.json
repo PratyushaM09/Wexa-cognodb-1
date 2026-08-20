@@ -1,0 +1,22 @@
+{
+  "platform": "arangodb",
+  "startedAt": "2026-08-20T09:53:03.752756400Z",
+  "nodeCount": 7115,
+  "relationshipCount": 103689,
+  "iterations": 50,
+  "warmup": 10,
+  "concurrency": 4,
+  "durationSeconds": 30,
+  "writeRatio": 0.100,
+  "loadStats": {"nodes":7115,"relationships":103689,"seconds":223.264,"nodesPerSecond":31.868,"relationshipsPerSecond":464.423},
+  "metrics": {
+    "point_lookup": {"samples":50,"minMs":269.819,"p50Ms":273.376,"p95Ms":411.605,"maxMs":470.570},
+    "indexed_lookup": {"samples":50,"minMs":270.100,"p50Ms":272.786,"p95Ms":339.011,"maxMs":510.361},
+    "traversal_1_hop": {"samples":50,"minMs":271.160,"p50Ms":278.987,"p95Ms":376.283,"maxMs":401.217},
+    "traversal_2_hop": {"samples":50,"minMs":271.196,"p50Ms":278.905,"p95Ms":415.367,"maxMs":510.093},
+    "traversal_3_hop": {"samples":50,"minMs":269.923,"p50Ms":281.796,"p95Ms":362.473,"maxMs":461.136},
+    "aggregation": {"samples":50,"minMs":274.429,"p50Ms":280.575,"p95Ms":384.556,"maxMs":406.948}
+  },
+  "mixedWorkload": {"operations":341,"reads":300,"writes":41,"queriesPerSecond":11.367},
+  "resourceStats": {"advertisedSpec":"ArangoDB Cloud trial: GCP Iowa USA, version 3.12.10; record deployment size/specs before final run","observedUsage":"not observable through the portable ArangoDB HTTP harness"}
+}

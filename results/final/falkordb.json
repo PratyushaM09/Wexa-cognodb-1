@@ -1,0 +1,22 @@
+{
+  "platform": "falkordb",
+  "startedAt": "2026-08-20T09:43:08.366595300Z",
+  "nodeCount": 7115,
+  "relationshipCount": 103689,
+  "iterations": 50,
+  "warmup": 10,
+  "concurrency": 4,
+  "durationSeconds": 30,
+  "writeRatio": 0.100,
+  "loadStats": {"nodes":7115,"relationships":103689,"seconds":60.323,"nodesPerSecond":117.949,"relationshipsPerSecond":1718.901},
+  "metrics": {
+    "point_lookup": {"samples":50,"minMs":24.759,"p50Ms":28.013,"p95Ms":42.094,"maxMs":46.271},
+    "indexed_lookup": {"samples":50,"minMs":25.718,"p50Ms":28.604,"p95Ms":41.501,"maxMs":46.427},
+    "traversal_1_hop": {"samples":50,"minMs":25.263,"p50Ms":30.847,"p95Ms":87.562,"maxMs":368.004},
+    "traversal_2_hop": {"samples":50,"minMs":25.146,"p50Ms":28.152,"p95Ms":42.993,"maxMs":46.279},
+    "traversal_3_hop": {"samples":50,"minMs":25.417,"p50Ms":29.865,"p95Ms":40.446,"maxMs":44.644},
+    "aggregation": {"samples":50,"minMs":27.182,"p50Ms":30.102,"p95Ms":40.587,"maxMs":46.639}
+  },
+  "mixedWorkload": {"operations":3144,"reads":2884,"writes":260,"queriesPerSecond":104.800},
+  "resourceStats": {"advertisedSpec":"FalkorDB Cloud free instance: AWS ap-south-1; record exact size/specs before final run","observedUsage":"not observable through the portable FalkorDB RESP harness"}
+}

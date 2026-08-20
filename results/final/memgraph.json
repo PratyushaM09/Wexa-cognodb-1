@@ -1,0 +1,22 @@
+{
+  "platform": "memgraph",
+  "startedAt": "2026-08-20T10:07:25.629486200Z",
+  "nodeCount": 7115,
+  "relationshipCount": 103689,
+  "iterations": 50,
+  "warmup": 10,
+  "concurrency": 4,
+  "durationSeconds": 30,
+  "writeRatio": 0.100,
+  "loadStats": {"nodes":7115,"relationships":103689,"seconds":388.969,"nodesPerSecond":18.292,"relationshipsPerSecond":266.574},
+  "metrics": {
+    "point_lookup": {"samples":50,"minMs":799.715,"p50Ms":810.820,"p95Ms":1036.674,"maxMs":1071.154},
+    "indexed_lookup": {"samples":50,"minMs":801.385,"p50Ms":817.416,"p95Ms":992.934,"maxMs":1031.285},
+    "traversal_1_hop": {"samples":50,"minMs":802.056,"p50Ms":818.221,"p95Ms":1078.434,"maxMs":1120.984},
+    "traversal_2_hop": {"samples":50,"minMs":803.305,"p50Ms":816.364,"p95Ms":1094.331,"maxMs":1366.295},
+    "traversal_3_hop": {"samples":50,"minMs":801.289,"p50Ms":810.667,"p95Ms":1047.484,"maxMs":1116.157},
+    "aggregation": {"samples":50,"minMs":801.711,"p50Ms":809.070,"p95Ms":1106.967,"maxMs":1199.144}
+  },
+  "mixedWorkload": {"operations":138,"reads":126,"writes":12,"queriesPerSecond":4.600},
+  "resourceStats": {"advertisedSpec":"Record advertised free-tier specs here before running","observedUsage":"not observable through the portable Bolt harness"}
+}

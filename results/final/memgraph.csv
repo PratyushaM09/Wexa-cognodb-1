@@ -1,0 +1,7 @@
+platform,metric,samples,min_ms,p50_ms,p95_ms,max_ms
+memgraph,point_lookup,50,799.715,810.820,1036.674,1071.154
+memgraph,indexed_lookup,50,801.385,817.416,992.934,1031.285
+memgraph,traversal_1_hop,50,802.056,818.221,1078.434,1120.984
+memgraph,traversal_2_hop,50,803.305,816.364,1094.331,1366.295
+memgraph,traversal_3_hop,50,801.289,810.667,1047.484,1116.157
+memgraph,aggregation,50,801.711,809.070,1106.967,1199.144

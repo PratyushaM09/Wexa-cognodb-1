@@ -1,0 +1,22 @@
+{
+  "platform": "neo4j-aura",
+  "startedAt": "2026-08-20T09:40:23.023625100Z",
+  "nodeCount": 7115,
+  "relationshipCount": 103689,
+  "iterations": 50,
+  "warmup": 10,
+  "concurrency": 4,
+  "durationSeconds": 30,
+  "writeRatio": 0.100,
+  "loadStats": {"nodes":7115,"relationships":103689,"seconds":70.183,"nodesPerSecond":101.378,"relationshipsPerSecond":1477.416},
+  "metrics": {
+    "point_lookup": {"samples":50,"minMs":260.431,"p50Ms":274.563,"p95Ms":549.242,"maxMs":610.975},
+    "indexed_lookup": {"samples":50,"minMs":262.266,"p50Ms":273.944,"p95Ms":444.394,"maxMs":648.344},
+    "traversal_1_hop": {"samples":50,"minMs":261.320,"p50Ms":273.243,"p95Ms":579.798,"maxMs":672.671},
+    "traversal_2_hop": {"samples":50,"minMs":262.871,"p50Ms":276.633,"p95Ms":460.438,"maxMs":704.941},
+    "traversal_3_hop": {"samples":50,"minMs":262.673,"p50Ms":267.222,"p95Ms":333.862,"maxMs":569.385},
+    "aggregation": {"samples":50,"minMs":264.263,"p50Ms":268.563,"p95Ms":367.228,"maxMs":503.799}
+  },
+  "mixedWorkload": {"operations":395,"reads":350,"writes":45,"queriesPerSecond":13.167},
+  "resourceStats": {"advertisedSpec":"Record advertised free-tier specs here before running","observedUsage":"not observable through the portable Bolt harness"}
+}

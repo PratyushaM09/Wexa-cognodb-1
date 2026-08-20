@@ -1,0 +1,9 @@
+target/
+.m2/
+.env
+config/platforms.properties
+data/*.csv
+!data/README.md
+results/raw/*.json
+results/raw/*.csv
+*.log

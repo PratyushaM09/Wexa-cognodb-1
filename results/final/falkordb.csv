@@ -1,0 +1,7 @@
+platform,metric,samples,min_ms,p50_ms,p95_ms,max_ms
+falkordb,point_lookup,50,24.759,28.013,42.094,46.271
+falkordb,indexed_lookup,50,25.718,28.604,41.501,46.427
+falkordb,traversal_1_hop,50,25.263,30.847,87.562,368.004
+falkordb,traversal_2_hop,50,25.146,28.152,42.993,46.279
+falkordb,traversal_3_hop,50,25.417,29.865,40.446,44.644
+falkordb,aggregation,50,27.182,30.102,40.587,46.639

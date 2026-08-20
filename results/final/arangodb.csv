@@ -1,0 +1,7 @@
+platform,metric,samples,min_ms,p50_ms,p95_ms,max_ms
+arangodb,point_lookup,50,269.819,273.376,411.605,470.570
+arangodb,indexed_lookup,50,270.100,272.786,339.011,510.361
+arangodb,traversal_1_hop,50,271.160,278.987,376.283,401.217
+arangodb,traversal_2_hop,50,271.196,278.905,415.367,510.093
+arangodb,traversal_3_hop,50,269.923,281.796,362.473,461.136
+arangodb,aggregation,50,274.429,280.575,384.556,406.948
