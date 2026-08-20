@@ -1,5 +1,7 @@
 # CognoDB Cloud Graph Database Benchmark
 
+Free-tier graph databases all promise the same thing: fast traversals, painless scaling, zero ops. This repo puts five of them — CognoDB Cloud, Neo4j AuraDB, Memgraph, FalkorDB, and ArangoDB — through the identical dataset, identical queries, and (as close as free tiers allow) identical hardware, to see which promises actually hold up. Spoiler: the gap between the fastest and slowest platform on the same workload is roughly 27x, and it isn't the platform you'd guess from marketing alone.
+
 This repository benchmarks CognoDB Cloud against comparable graph database platforms using the same dataset, logical workloads, client machine, and reporting format.
 
 ## Implementation Status
@@ -172,6 +174,15 @@ Each run emits:
 **Load throughput doesn't track query latency.** FalkorDB and Neo4j AuraDB loaded fastest (1,700 and 1,477 rel/s), while ArangoDB and CognoDB loaded much slower (~440-460 rel/s). Notably, CognoDB is slow at both loading and querying, while ArangoDB is slow to load but fast to query — the two rankings don't move together. This suggests the load path is driven by each platform's batching/transaction handling rather than the same factors that drive read latency, and is worth a dedicated ingest-path investigation beyond this benchmark's scope.
 
 **Caveat on confidence:** with 50 iterations per workload (below the ≥100 this benchmark's methodology targets) and a single run per platform, the results above should be read as directionally reliable rather than statistically tight — the caveats section below lists the specific run conditions that could shift these numbers on a re-run.
+
+## Future Work
+
+Scoped out of this pass, deliberately, to keep the comparison honest within the assignment window:
+
+- **Concurrency sweep.** Mixed workload was measured at a single concurrency level (4 clients). A 1/10/40 sweep would show how each platform's throughput degrades under load, which matters more than a single-point QPS number for real usage.
+- **Charts.** Results are reported as tables only; the same numbers plotted (especially load throughput vs. query latency, which don't correlate in this run) would make the FalkorDB outlier and the CognoDB/Memgraph overhead pattern easier to see at a glance.
+- **Repeated runs.** Each platform was benchmarked once. Repeating each run 3-5 times and reporting variance would separate genuine platform differences from one-off network noise, which matters most for platforms with close p50s (Neo4j AuraDB vs. ArangoDB).
+- **True tier parity for Memgraph.** Memgraph doesn't currently offer a free tier at CognoDB's resource level; finding a way to cap it down (or a comparable alternative) would close the fairness gap noted above.
 
 ## Caveats
 
